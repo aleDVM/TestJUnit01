@@ -1,4 +1,9 @@
-package modelo;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
 import modelo.Calculadora;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -7,10 +12,13 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-
-public class CalculadoraTest {
+/**
+ *
+ * @author pella
+ */
+public class nuevos {
     
-    public CalculadoraTest() {
+    public nuevos() {
     }
     
     @BeforeClass
@@ -29,10 +37,7 @@ public class CalculadoraTest {
     public void tearDown() {
     }
 
-    /**
-     * Test of Sumar method, of class Calculadora.
-     */
-    @Test
+     @Test
     public void testSumar() {
         System.out.println("Sumar");
         Calculadora instance = new Calculadora(8, 2);
