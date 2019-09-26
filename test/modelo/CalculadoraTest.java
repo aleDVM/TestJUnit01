@@ -7,6 +7,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+
 public class CalculadoraTest {
     
     public CalculadoraTest() {
@@ -34,12 +35,12 @@ public class CalculadoraTest {
     @Test
     public void testSumar() {
         System.out.println("Sumar");
-        Calculadora instance = new Calculadora();
-        int expResult = 0;
+        Calculadora instance = new Calculadora(8, 2);
+        int expResult = 10;
         int result = instance.Sumar();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -48,12 +49,12 @@ public class CalculadoraTest {
     @Test
     public void testRestar() {
         System.out.println("Restar");
-        Calculadora instance = new Calculadora();
-        int expResult = 0;
+        Calculadora instance = new Calculadora(8, 2);
+        int expResult = 6;
         int result = instance.Restar();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -62,12 +63,12 @@ public class CalculadoraTest {
     @Test
     public void testMultiplicar() {
         System.out.println("Multiplicar");
-        Calculadora instance = new Calculadora();
-        int expResult = 0;
+        Calculadora instance = new Calculadora(8, 2);
+        int expResult = 16;
         int result = instance.Multiplicar();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -76,12 +77,14 @@ public class CalculadoraTest {
     @Test
     public void testDividir() {
         System.out.println("Dividir");
-        Calculadora instance = new Calculadora();
-        int expResult = 0;
+        Calculadora instance = new Calculadora(8, 2);
+        int expResult = 4;
         int result = instance.Dividir();
-        assertEquals(expResult, result);
+        //assertEquals(expResult, result);
+        // asertTrue se usa para operaciones numericas
+        assertTrue(instance.Dividir()==4);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }
